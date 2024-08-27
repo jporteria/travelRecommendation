@@ -9,6 +9,8 @@ body{
     align-items: center;
     flex-direction: column;
     position: absolute;
+    color: white;
+    text-shadow: 2px 2px #0d00ff;
 }
 nav{
     background-color: rgb(40, 40, 150);
@@ -34,6 +36,36 @@ a{
     text-decoration: none;
     color: white;
 }
+.recommendation-result{
+    height: auto;
+    width: auto;
+    position: fixed;
+    right: 100px;
+    top: 100px;
+    z-index: 2;
+}
+.recommendation-result-hidden{
+    height: auto;
+    width: auto;
+    position: fixed;
+    right: 100px;
+    top: 100px;
+    z-index: 2;
+    display: none;
+}
+.result{
+    background-color: blue;
+    height: auto;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.result-image{
+    width: 400px;
+    height: 200px;
+    border: 1px solid white;
+}
 section{
     height: 100vh;
     width: 100vw;
@@ -42,12 +74,63 @@ section{
     justify-content: center;
     align-items: center;
 }
+.search-div{
+    background-color: white;
+    padding: 10px; 
+    border-radius: 20px;
+}
+#search-input{
+    border: none;
+}
+#search-input:focus{
+    border: none;
+    outline: none;
+}
+button{
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+    padding: 5px;
+}
 #home{
-    /* background-color: none; */
+    font-size: 1.5em;
+    flex-direction: column;
+    align-items: start;
+}
+#home > div{
+    padding-left: 100px;
+    width: 500px;
 }
 #aboutUs{
-    /* background-color: green; */
+    font-size: 1.5em;
+    flex-direction: column;
+    align-items: center;
+}
+#aboutUs > div{
+    width: 1000px;
 }
 #contactUs{
-    /* background-color: yellow; */
+    
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    margin: 20px;
+}
+legend{
+    font-size: 2em;
+}
+.contact-form > input{
+    height: 50px;
+    margin-top: 20px;
+}
+.contact-form > textarea{
+    height: 150px;
+    margin: 20px 0;
+}
+.contact-button{
+    height: 50px;
 }

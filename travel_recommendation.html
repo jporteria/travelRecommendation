@@ -6,26 +6,55 @@
     </head>
     <body>
         <nav>
-            <h1>Travel Recommendation</h1>
+            <h1><a href="#home">Travel Recommendation</a></h1>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#aboutUs">About Us</a></li>
                 <li><a href="#contactUs">Contact Us</a></li>
             </ul>
-            <div>
-                <input type="text">
-                <button>Search</button>
+            <div class="search-div">
+                <input type="text" id="search-input" placeholder="Enter destination">
+                <button onclick="getData()">Search</button>
                 <button>Clear</button>
             </div>
         </nav>
+        <div id="recommendation-result" class="recommendation-result-hidden">
+            <!-- results here -->
+             <div class="result">
+                <img src="" alt="" id="first-image" class="result-image">
+                <h2 id="first-name"></h2>
+                <p id="first-description"></p>
+             </div>
+             <div class="result">
+                <img src="" alt="second image result" id="second-image" class="result-image">
+                <h2 id="second-name">name</h2>
+                <p id="second-description">description</p>
+             </div>
+             
+        </div>
         <section id="home">
-            <h1>This is the home page</h1>
+            <div>
+                <h1>This is the home page</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
         </section>
         <section id="aboutUs">
-            <h1>This is the about page</h1>
+            <div>
+                <h1>This is the about page</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
         </section>
         <section id="contactUs">
-            <h1>This is the contact page</h1>
+                <form action="submit">
+                    <fieldset class="contact-form">
+                        <legend>Contact Us</legend>
+                        <input type="text" placeholder="Enter your Name">
+                        <input type="email" placeholder="Enter your Email">
+                        <textarea name="message" id="message"></textarea>
+                        <button class="contact-button">Submit</button>
+                    </fieldset>
+                </form>
         </section>
+        <script src="./travel_recommendation.js"></script>
     </body>
 </html>
